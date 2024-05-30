@@ -1,6 +1,7 @@
 [DEMO LINK](https://martachobaniuk.github.io/met_landing_page/)
 
   THE MET Museum Landing Page
+  
 Welcome to the landing page for the Met Museum, a showcase of its available collections, visiting hours, and contacts. Built using the BEM methodology and the SCSS preprocessor, this page ensures clean and maintainable code. The layout is adaptive and responsive, providing a seamless user experience across devices of different screen sizes.
 
   Technologies Used:
