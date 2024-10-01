@@ -1,0 +1,69 @@
+.now-on-view {
+  &__photos {
+    margin-bottom: 16px;
+  }
+
+  &__link {
+    &--wide {
+      @include on-tablet {
+        grid-column: span 4;
+      }
+
+      @include on-desktop {
+        grid-column: span 8;
+      }
+    }
+
+    &--square {
+      @include on-tablet {
+        grid-column: span 2;
+      }
+
+      @include on-desktop {
+        grid-column: span 4;
+      }
+    }
+  }
+
+  &__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    transition: all 0.3s;
+
+    &:hover {
+      @include hover-photo;
+    }
+
+    &--left {
+      object-position: 10%;
+    }
+
+    &--right {
+      object-position: 0%;
+    }
+
+    &--tablet-off {
+      @include on-tablet {
+        display: none;
+      }
+
+      @include on-desktop {
+        display: grid;
+      }
+    }
+  }
+
+  &__description {
+    &--link {
+      font-weight: 700;
+      color: $color-red;
+      text-decoration: none;
+    }
+
+    &--text {
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.icon {
+  display: block;
+  transition: all 0.3s;
+
+  @include sizes(18px, 18px);
+  @include background(no-repeat, center, cover);
+
+  @include on-tablet {
+    @include sizes(24px, 24px);
+  }
+
+  @include on-desktop {
+    @include sizes(24px, 24px);
+  }
+
+  &--menu {
+    background-image: url('../icons/menu.svg');
+
+    &:hover {
+      @include background(no-repeat, center, cover);
+      @include hover-photo;
+
+      background-image: url('../icons/menu_hover.svg');
+    }
+  }
+
+  &--call {
+    background-image: url('../icons/phone.svg');
+    transition: all 0.3s;
+
+    &:hover {
+      @include hover-photo;
+    }
+  }
+
+  &--cross {
+    background-image: url('../icons/cross.svg');
+    grid-column-start: 3;
+
+    &:hover {
+      @include hover-photo;
+    }
+  }
+}

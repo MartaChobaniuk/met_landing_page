@@ -1,0 +1,20 @@
+.logo {
+  &__img {
+    align-self: center;
+    transition: all 0.3s;
+
+    @include sizes(64px, 46px);
+
+    @include on-tablet {
+      @include sizes(87px, 65px);
+    }
+
+    @include on-desktop {
+      @include sizes(87px, 65px);
+    }
+
+    &:hover {
+      @include hover-photo;
+    }
+  }
+}
