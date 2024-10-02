@@ -23,3 +23,11 @@ Welcome to the landing page for the Met Museum, a showcase of its available coll
 - **High-Quality Images**: Showcases the museum's art collections.
 - **Responsive Navigation Menu**: Adapts to different screen sizes.
 
+- ## Commands
+
+| Name   | Command          |
+|--------|------------------|
+| Install| `npm install`    |
+| Start  | `npm run start`   |
+| Build  | `npm run build`   |
+
